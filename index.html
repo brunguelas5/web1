@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lionel Messi - Perfil de Jugador</title>
+    <style>
+        body {
+            background: linear-gradient(145deg, #0a223d, #193b67);
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            padding: 30px;
+            margin: 0;
+        }
+       
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #103562;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+       
+        h1 {
+            color: #ffcc00;
+            font-size: 42px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+       
+        .subtitle {
+            color: #f8f8f8;
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+       
+        .player-image {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border: 5px solid #ffcc00;
+            border-radius: 150px;
+            box-shadow: 0 0 20px rgba(255, 204, 0, 0.7);
+            margin: 20px auto;
+        }
+       
+        .description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 25px 0;
+            padding: 0 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+       
+        h2 {
+            color: #6cbeec;
+            font-size: 28px;
+            margin-top: 30px;
+            border-bottom: 2px solid #6cbeec;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+       
+        .favorites {
+            background-color: #154580;
+            width: fit-content;
+            margin: 0 auto;
+            padding: 15px 40px;
+            border-radius: 15px;
+            text-align: left;
+        }
+       
+        .favorites li {
+            margin: 15px 0;
+            font-size: 18px;
+            color: #ffffff;
+        }
+       
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+       
+        .stat-item {
+            background-color: #154580;
+            padding: 15px;
+            border-radius: 10px;
+            width: 120px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+       
+        .stat-item:hover {
+            transform: translateY(-5px);
+        }
+       
+        .stat-number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+       
+        .stat-label {
+            font-size: 14px;
+            color: #6cbeec;
+        }
+       
+        .timeline {
+            margin: 40px 0;
+            text-align: left;
+            position: relative;
+        }
+       
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #ffcc00;
+        }
+       
+        .timeline-item {
+            margin-left: 50px;
+            padding: 15px;
+            background-color: #154580;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+       
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 20px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #ffcc00;
+            border: 3px solid #0a223d;
+        }
+       
+        .timeline-year {
+            font-weight: bold;
+            color: #ffcc00;
+            margin-bottom: 5px;
+        }
+       
+        .personal-life {
+            background-color: #154580;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+        }
+       
+        .personal-life p {
+            margin: 10px 0;
+        }
+       
+        button {
+            background-color: #ffcc00;
+            color: #0a223d;
+            border: none;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+       
+        button:hover {
+            background-color: #ffffff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            transform: scale(1.05);
+        }
+       
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #6cbeec;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lionel Messi</h1>
+        <p class="subtitle">"La Pulga" • Campeón del Mundo • Ocho veces Balón de Oro</p>
+       
+        <img class="player-image" src="/api/placeholder/400/400" alt="Lionel Messi">
+       
+        <p class="description">
+            Considerado por muchos como el mejor futbolista de todos los tiempos, Lionel Messi ha redefinido el deporte con su extraordinaria visión, control del balón y capacidad goleadora. Tras consagrarse campeón del mundo con Argentina en 2022, completó su colección de trofeos y selló su legado como una leyenda viviente del fútbol mundial.
+        </p>
+       
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">821</div>
+                <div class="stat-label">GOLES</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">361</div>
+                <div class="stat-label">ASISTENCIAS</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">44</div>
+                <div class="stat-label">TROFEOS</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">8</div>
+                <div class="stat-label">BALONES DE ORO</div>
+            </div>
+        </div>
+       
+        <h2>Trayectoria Profesional</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">2000-2021</div>
+                <strong>FC Barcelona</strong>
+                <p>Tras unirse a La Masía a los 13 años, Messi debutó con el primer equipo en 2004. Durante sus 17 temporadas en el club, ganó 35 títulos, incluyendo 10 Ligas y 4 Champions League, convirtiéndose en el máximo goleador histórico del club con 672 goles.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2021-2023</div>
+                <strong>Paris Saint-Germain</strong>
+                <p>Tras su sorpresiva salida del Barcelona, Messi firmó con el PSG donde ganó dos veces la Ligue 1. A pesar de sus contribuciones, su etapa en París no alcanzó las expectativas generadas por su fichaje.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2023-Presente</div>
+                <strong>Inter Miami CF</strong>
+                <p>En julio de 2023, Messi dio el salto a la MLS para unirse al Inter Miami. Su impacto fue inmediato, llevando al equipo a ganar la Leagues Cup 2023, su primer título, y transformando la popularidad del fútbol en Estados Unidos.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2005-Presente</div>
+                <strong>Selección Argentina</strong>
+                <p>Tras años de finales perdidas, finalmente lideró a Argentina a la gloria con la Copa América 2021, la Finalissima 2022 y la Copa Mundial 2022, consolidándose como el máximo goleador histórico de su selección.</p>
+            </div>
+        </div>
+       
+        <h2>Vida Personal</h2>
+        <div class="personal-life">
+            <p>Nacido el 24 de junio de 1987 en Rosario, Argentina, Lionel Messi superó un diagnóstico de deficiencia de hormona del crecimiento en su infancia. A los 13 años, el FC Barcelona apostó por su talento y financió su tratamiento médico.</p>
+           
+            <p>Está casado con Antonela Roccuzzo, su novia de la infancia, con quien tiene tres hijos: Thiago (2012), Mateo (2015) y Ciro (2018). La familia Messi es conocida por mantener un perfil bajo y una vida familiar muy unida a pesar de la fama mundial.</p>
+           
+            <p>A través de su fundación, Messi apoya causas relacionadas con la salud infantil y la educación. Es embajador de UNICEF desde 2010 y ha financiado numerosos proyectos hospitalarios, especialmente en su Rosario natal.</p>
+        </div>
+       
+        <h2>Sus cosas favoritas</h2>
+        <ul class="favorites">
+            <li>Pasar tiempo con su familia y jugar con sus hijos</li>
+            <li>El mate y las comidas tradicionales argentinas como el asado</li>
+            <li>Los videojuegos, especialmente FIFA y Call of Duty</li>
+        </ul>
+       
+        <button onclick="mostrarMensaje()">Escuchar mensaje de Messi</button>
+       
+        <div class="footer">
+            Actualizado: Mayo 2025
+        </div>
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            alert("¡Hola! Soy Leo Messi. Recuerden que con esfuerzo, pasión y perseverancia, los sueños se hacen realidad.");
+        }
+    </script>
+</body>
+</html>
